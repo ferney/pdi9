@@ -1,0 +1,82 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.circular-menu {
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+
+.circular-menu__item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-decoration: none;
+	color:#EDBF11;
+	background-color:#FF9900;
+	transition: 0.8s;
+	outline: none;
+	box-shadow: 0px 0px 10px #FF9900;
+}
+
+.circular-menu__button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color:aqua;
+	outline: none;
+	box-shadow: 0px 0px 10px #020E73;
+}
+
+.circular-menu__lines, 
+.circular-menu__lines::before,
+.circular-menu__lines::after {
+	position: absolute;
+	width: 40px;
+	height: 6px;
+	background-color: #AA0CE8;
+	transition: 0.8s;
+}
+
+.circular-menu__lines {
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	background-color: transparent;
+
+}
+
+.circular-menu__lines::before {
+	content: "";
+}
+
+.circular-menu__lines::after {
+	content: "";
+	transform: rotate(90deg);
+	transition: 0.5s;
+}
+
+.circular-menu__button_active .circular-menu__lines::before {
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+
+.circular-menu__button_active .circular-menu__lines::after {
+	transform: rotate(-45deg);
+	transition: 0.5s;
+}

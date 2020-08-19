@@ -1,0 +1,36 @@
+<!-- Created by Anton Anokhin-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Circular Menu</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	
+	</head>
+<body>
+	
+	<div class="circular-menu">
+		<a href="javascript:ventanaSecundaria('juegos/saporyranas/index.html')" Class="circular-menu__item"> <img src="img/rana.png" style="width: 75px; height: 75px;"></a>
+		<script > 
+			function ventanaSecundaria (URL){ 
+			   window.open(URL,"ventana1","width=700px,height=700px,scrollbars") 
+			} 
+			
+			</script>
+		
+		<!--<a href="juegos/saporyranas/index.html" target="_blank"	Class="circular-menu__item"><img src="img/rana.png" style="width: 75px; height: 75px;"></a>-->
+		<a href="javascript:ventanaSecundaria('juegos/TorresHanoi/index.html')" 	class="circular-menu__item"><img src="img/hanoi.png" style="width: 75px; height: 75px;"></a>
+		<a href="javascript:ventanaSecundaria('juegos/laberinto/index.html')" 	class="circular-menu__item"><img src="img/laberinto.png" style="width: 65px; height: 65px;"></a>
+		<a href="javascript:ventanaSecundaria('juegos/test/index.html')" 	class="circular-menu__item"><img src="img/cerebro.png" style="width: 75px; height: 75px;"></a>
+		<a href="javascript:ventanaSecundaria('https://www.novelgames.com/es/threemensmorris/')" 	class="circular-menu__item"><img src="img/morris.png" style="width: 85px; height: 85px;"></a>
+		<a href="javascript:ventanaSecundaria('juegos/prueba/principal.html')" 	class="circular-menu__item"><img src="img/examen.png" style="width: 75px; height: 75px;"></a>
+		<a href="#" target="_blank"	class="circular-menu__button">
+			<span class="circular-menu__lines"></span>
+		</a>
+	</div>
+
+<script src="js.js"></script>
+
+</body>
+</html>
